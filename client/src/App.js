@@ -13,7 +13,7 @@ const App = () => {
   const classes = useStyles();
   useEffect(() => {
     dispatch(getPosts());
-  }, [dispatch]);
+  }, [currentId, dispatch]);
   return (
     <Container maxidth="lg">
       <AppBar className={classes.appBar} position="static" color="inherit">
